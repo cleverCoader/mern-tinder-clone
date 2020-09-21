@@ -8,10 +8,9 @@ function App() {
   return (
     <div className="app">
       <Header />
-      
       <TinderCards />
-
       <SwipeButtons />
+      {/* end of front end */}
     </div>
   );
 }
