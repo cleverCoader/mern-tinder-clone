@@ -7,14 +7,15 @@ const Cors = require('cors');
 const mongoose = require('mongoose');
 
 // import Cards from "./dbCards.js";
-const Cards = require('./dbCards');
+const Cards = require("../tinder-backend/dbCards");
 
 
-const app = express();
+const app = express()
 const port = process.env.PORT || 8002
 
 const connection_url =`mongodb+srv://admin:krishna45@cluster0.snqyb.mongodb.net/tinderdb?retryWrites=true&w=majority`
 
+//middlewares
 
 app.use(express.json());
 app.use(Cors());

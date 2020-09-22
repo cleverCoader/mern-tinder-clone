@@ -2,8 +2,9 @@ const mongoose = require('mongoose');
 
 const cardsSchema = mongoose.Schema({
     name: String,
-    imageUrl:String
+    imgUrl:String
 })
 
 
-mongoose.model('Cards', cardsSchema);
+const Cards = mongoose.model('Cards', cardsSchema);
+module.exports = Cards;
